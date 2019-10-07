@@ -34,7 +34,7 @@ RUN \
 	/tmp/fix-xvfb.sh && \
 	apt-get update -y && \
 	apt-get install -y --no-install-recommends \
-		wine-staging:i386 \
+		wine-staging \
 		winehq-staging
 
 ENTRYPOINT ["/tini", "--"]
